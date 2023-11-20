@@ -54,10 +54,10 @@ public class VendaJpaDAOTest {
   private ProdutoJpa produto;
 
   public VendaJpaDAOTest() {
-    this.vendaDao = new VendaJpaDAO(Databases.PSQL_PRODUCTION.value);
-    vendaExclusaoDao = new VendaExclusaoJpaDAO(Databases.PSQL_PRODUCTION.value);
-    this.clienteDao = new ClienteJpaDAO(Databases.PSQL_PRODUCTION.value);
-    this.produtoDao = new ProdutoJpaDAO(Databases.PSQL_PRODUCTION.value);
+    this.vendaDao = new VendaJpaDAO(Databases.PSQL_PRODUCTION.getValue());
+    vendaExclusaoDao = new VendaExclusaoJpaDAO(Databases.PSQL_PRODUCTION.getValue());
+    this.clienteDao = new ClienteJpaDAO(Databases.PSQL_PRODUCTION.getValue());
+    this.produtoDao = new ProdutoJpaDAO(Databases.PSQL_PRODUCTION.getValue());
     rd = new Random();
   }
 
